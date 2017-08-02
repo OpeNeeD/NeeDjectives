@@ -3,5 +3,5 @@ An ontology for representing human needs adjectives
 
 
 
-![OpeNeeD Needs Adjectives Ontology](https://raw.githubusercontent.com/openeed/ond-needs-adjectives/master/ond-needs-adjectives.svg)
-<img src="https://raw.githubusercontent.com/openeed/ond-needs-adjectives/master/ond-needs-adjectives.svg" width="100%">
+![OpeNeeD Needs Adjectives Ontology](https://cdn.rawgit.com/openeed/ond-needs-adjectives/master/ond-needs-adjectives.svg)
+<img src="https://cdn.rawgit.com/openeed/ond-needs-adjectives/master/ond-needs-adjectives.svg" width="100%">
