@@ -1,1 +1,505 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/openeed/ond-needs-adjectives#"
+     xml:base="http://purl.org/openeed/ond-needs-adjectives"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://purl.org/openeed/ond-needs-adjectives">
+        <owl:versionIRI rdf:resource="http://purl.org/openeed/ond-needs-adjectives/1.0.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#describes -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/openeed/ond-needs-adjectives#describes">
+        <owl:inverseOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#hasAdjective"/>
+        <rdfs:domain rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+        <rdfs:range rdf:resource="http://purl.org/openeed/ond-needs-adjectives#HumanRequirement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#hasAdjective -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/openeed/ond-needs-adjectives#hasAdjective">
+        <rdfs:domain rdf:resource="http://purl.org/openeed/ond-needs-adjectives#HumanRequirement"/>
+        <rdfs:range rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Absolute -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Absolute">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+        <owl:disjointWith rdf:resource="http://purl.org/openeed/ond-needs-adjectives#Relative"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Artificial -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Artificial">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+        <owl:disjointWith rdf:resource="http://purl.org/openeed/ond-needs-adjectives#Natural"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Basic -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Basic">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+        <owl:disjointWith rdf:resource="http://purl.org/openeed/ond-needs-adjectives#Higher"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Circumstantial -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Circumstantial">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+        <owl:disjointWith rdf:resource="http://purl.org/openeed/ond-needs-adjectives#Constitutional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Common -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Common">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Comparative -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Comparative">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Constitutional -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Constitutional">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Cultural -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Cultural">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+        <owl:disjointWith rdf:resource="http://purl.org/openeed/ond-needs-adjectives#Physiological"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Derivative -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Derivative">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+        <owl:disjointWith rdf:resource="http://purl.org/openeed/ond-needs-adjectives#Non-derivative"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Discursive -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Discursive">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Eudaimonic -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Eudaimonic">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+        <owl:disjointWith rdf:resource="http://purl.org/openeed/ond-needs-adjectives#Hedonic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Experiential -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Experiential">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Expressed -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Expressed">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#False -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#False">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+        <owl:disjointWith rdf:resource="http://purl.org/openeed/ond-needs-adjectives#True"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Felt -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Felt">
+        <owl:equivalentClass rdf:resource="http://purl.org/openeed/ond-needs-adjectives#Subjective"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+        <owl:disjointWith rdf:resource="http://purl.org/openeed/ond-needs-adjectives#Interpreted"/>
+        <owl:disjointWith rdf:resource="http://purl.org/openeed/ond-needs-adjectives#Objective"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Hedonic -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Hedonic">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Higher -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Higher">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#HumanRequirement -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#HumanRequirement"/>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Inherent -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Inherent">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+        <owl:disjointWith rdf:resource="http://purl.org/openeed/ond-needs-adjectives#Interpreted"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Instrumental -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Instrumental">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+        <owl:disjointWith rdf:resource="http://purl.org/openeed/ond-needs-adjectives#Non-instrumental"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Intermediate -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Intermediate">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Interpreted -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Interpreted">
+        <owl:equivalentClass rdf:resource="http://purl.org/openeed/ond-needs-adjectives#Objective"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+        <owl:disjointWith rdf:resource="http://purl.org/openeed/ond-needs-adjectives#Subjective"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Intrinsic -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Intrinsic">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+        <owl:disjointWith rdf:resource="http://purl.org/openeed/ond-needs-adjectives#Procedural"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Material -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Material">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+        <owl:disjointWith rdf:resource="http://purl.org/openeed/ond-needs-adjectives#Non-material"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Mental -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Mental">
+        <owl:equivalentClass rdf:resource="http://purl.org/openeed/ond-needs-adjectives#Spiritual"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+        <owl:disjointWith rdf:resource="http://purl.org/openeed/ond-needs-adjectives#Physical"/>
+        <owl:disjointWith rdf:resource="http://purl.org/openeed/ond-needs-adjectives#Somatic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Natural -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Natural">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Negative -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Negative">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+        <owl:disjointWith rdf:resource="http://purl.org/openeed/ond-needs-adjectives#Positive"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Non-derivative -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Non-derivative">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Non-instrumental -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Non-instrumental">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Non-material -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Non-material">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Normative -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Normative">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Objective -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Objective">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+        <owl:disjointWith rdf:resource="http://purl.org/openeed/ond-needs-adjectives#Subjective"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Ontological -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Ontological">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Particular -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Particular">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Physical -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Physical">
+        <owl:equivalentClass rdf:resource="http://purl.org/openeed/ond-needs-adjectives#Somatic"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+        <owl:disjointWith rdf:resource="http://purl.org/openeed/ond-needs-adjectives#Spiritual"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Physiological -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Physiological">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Positive -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Positive">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Procedural -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Procedural">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Real -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Real">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Relative -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Relative">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Social -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Social">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Sociogenic -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Sociogenic">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+        <owl:disjointWith rdf:resource="http://purl.org/openeed/ond-needs-adjectives#Viscerogenic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Somatic -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Somatic">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+        <owl:disjointWith rdf:resource="http://purl.org/openeed/ond-needs-adjectives#Spiritual"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Spiritual -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Spiritual">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Subjective -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Subjective">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Substantive -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Substantive">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Technical -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Technical">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Thick -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Thick">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+        <owl:disjointWith rdf:resource="http://purl.org/openeed/ond-needs-adjectives#Thin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Thin -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Thin">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#True -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#True">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Universal -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Universal">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-needs-adjectives#Viscerogenic -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-needs-adjectives#Viscerogenic">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-needs-adjectives#NeedAdjectives"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
 
